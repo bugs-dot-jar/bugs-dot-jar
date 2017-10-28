@@ -1,0 +1,21 @@
+[submodule "accumulo"]
+	path = accumulo
+	url = https://github.com/bugs-dot-jar/accumulo.git
+[submodule "camel"]
+	path = camel
+	url = https://github.com/bugs-dot-jar/camel.git
+[submodule "flink"]
+	path = flink
+	url = https://github.com/bugs-dot-jar/flink.git
+[submodule "commons-math"]
+	path = commons-math
+	url = https://github.com/bugs-dot-jar/commons-math.git
+[submodule "maven"]
+	path = maven
+	url = https://github.com/bugs-dot-jar/maven.git
+[submodule "jackrabbit-oak"]
+	path = jackrabbit-oak
+	url = https://github.com/bugs-dot-jar/jackrabbit-oak.git
+[submodule "wicket"]
+	path = wicket
+	url = https://github.com/bugs-dot-jar/wicket.git
