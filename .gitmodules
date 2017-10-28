@@ -19,3 +19,6 @@
 [submodule "wicket"]
 	path = wicket
 	url = https://github.com/bugs-dot-jar/wicket.git
+[submodule "logging-log4j2"]
+	path = logging-log4j2
+	url = https://github.com/bugs-dot-jar/logging-log4j2
