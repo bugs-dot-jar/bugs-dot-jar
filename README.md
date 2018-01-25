@@ -48,7 +48,7 @@ $ git branch -a | grep bugs-dot-jar_
   remotes/origin/bugs-dot-jar_ACCUMULO-1051_25cf3ccd
   remotes/origin/bugs-dot-jar_ACCUMULO-1120_474b2577
   ...
-$ git checkout -t remotes/origin/bugs-dot-jar_ACCUMULO-1051_25cf3ccd
+$ git checkout bugs-dot-jar_ACCUMULO-1051_25cf3ccd
 $ ls -a .bugs-dot-jar
 .                      developer-patch.diff   test-results.txt
 ..                     flaky-test-results.txt
