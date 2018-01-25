@@ -39,7 +39,7 @@ To browse a specific bug data, please go to one of the following project directo
 +-- .gitmodules
 ```
 
-For example, you can checkout the buggy version corresponding to the JIRA Issue []ACCUMULO-1051](https://issues.apache.org/jira/browse/ACCUMULO-1051) as follows:
+For example, you can checkout the buggy version corresponding to the JIRA Issue [ACCUMULO-1051](https://issues.apache.org/jira/browse/ACCUMULO-1051) as follows:
 ```
 $ cd accumulo
 $ git branch -a | grep bugs-dot-jar_
