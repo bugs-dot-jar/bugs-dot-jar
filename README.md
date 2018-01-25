@@ -1,5 +1,17 @@
 # Bugs.jar: A Large-scale, Diverse Dataset of Bugs for Java Program Repair
 
+## How To Install
+
+For the first time, you should clone this repository as well as its submodules:
+```
+$ git clone --recursive https://github.com/bugs-dot-jar/bugs-dot-jar.git
+```
+
+To update the dataset, don't forget to update the submodules as well:
+```
+$ git pull --recurse-submodules && git submodule update --recursive
+```
+
 ## Directory & File Structure
 To browse a specific bug data, please go to one of the following project directories and select a branch starting with "bugs-dot-jar-".  The branch names follow the format: "bugs-dot-jar\_\[JIRA Issue ID\]\_\[Git commit ID of the fixed version\].  Each branch in a project represents the buggy version corresponding to the JIRA Issue and also includes the developer patch and the test results under `.bugs-dot-jar` directory.
 ```
@@ -25,6 +37,21 @@ To browse a specific bug data, please go to one of the following project directo
 |   +-- ...
 +-- README.md
 +-- .gitmodules
+```
+
+For example, you can checkout the buggy version corresponding to the JIRA Issue []ACCUMULO-1051](https://issues.apache.org/jira/browse/ACCUMULO-1051) as follows:
+```
+$ cd accumulo
+$ git branch -a | grep bugs-dot-jar_
+  remotes/origin/bugs-dot-jar_ACCUMULO-1044_9396979b
+  remotes/origin/bugs-dot-jar_ACCUMULO-1044_ea2f9856
+  remotes/origin/bugs-dot-jar_ACCUMULO-1051_25cf3ccd
+  remotes/origin/bugs-dot-jar_ACCUMULO-1120_474b2577
+  ...
+$ git checkout -t remotes/origin/bugs-dot-jar_ACCUMULO-1051_25cf3ccd
+$ ls -a .bugs-dot-jar
+.                      developer-patch.diff   test-results.txt
+..                     flaky-test-results.txt
 ```
 
 ## Disclamer
