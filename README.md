@@ -13,11 +13,12 @@ $ git pull --recurse-submodules && git submodule update --recursive
 ```
 
 ## Directory & File Structure
-To browse a specific bug data, please go to one of the following project directories and select a branch starting with "bugs-dot-jar-".  The branch names follow the format: "bugs-dot-jar\_\[JIRA Issue ID\]\_\[Git commit ID of the fixed version\].  Each branch in a project represents the buggy version corresponding to the JIRA Issue and also includes the developer patch and the test results under `.bugs-dot-jar` directory.
+To browse a specific bug data, please go to one of the following project directories and select a branch starting with "bugs-dot-jar-".  The branch names follow the format: "bugs-dot-jar\_\[JIRA Issue ID\]\_\[Git commit ID of the fixed version\].  Each branch in a project represents the buggy version corresponding to the JIRA Issue and also includes the bug report, the developer patch, and the test results under `.bugs-dot-jar` directory.
 ```
 .
 +-- accumulo
 |   +-- .bugs-dot-jar
+|       +-- bug-report.yml
 |       +-- developer-patch.diff
 |       +-- test-results.txt
 |       +-- flaky-test-results.txt
@@ -52,8 +53,8 @@ $ git checkout bugs-dot-jar_ACCUMULO-1051_25cf3ccd
 Branch 'bugs-dot-jar_ACCUMULO-1051_25cf3ccd' set up to track remote branch 'bugs-dot-jar_ACCUMULO-1051_25cf3ccd' from 'origin'.
 Switched to a new branch 'bugs-dot-jar_ACCUMULO-1051_25cf3ccd'
 $ ls -a .bugs-dot-jar
-.                      developer-patch.diff   test-results.txt
-..                     flaky-test-results.txt
+.                      bug-report.yml         flaky-test-results.txt
+..                     developer-patch.diff   test-results.txt
 ```
 
 ## Disclamer
